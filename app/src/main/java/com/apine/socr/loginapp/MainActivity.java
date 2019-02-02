@@ -16,9 +16,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        
+super.onCreate(savedInstanceState);        
+setContentView(R.layout.activity_main);
         initializ();
+int x = sum (2, 3);
+
         fap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,4 +59,9 @@ public class MainActivity extends AppCompatActivity {
         Singup=(TextView)findViewById(R.id.SingupTV);
         Recovery=(TextView)findViewById(R.id.RecoveryTV);
     }
+
+public void sum (int x, int y){
+return x + y;
+}
+
 }
